@@ -13,6 +13,8 @@
 		7DA9CEC61B14CC83007C3E12 /* Threads.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA9CEC51B14CC83007C3E12 /* Threads.swift */; };
 		7DA9CEFA1B14D745007C3E12 /* URLEncode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA9CEF91B14D745007C3E12 /* URLEncode.swift */; };
 		7DA9CEFD1B14D93E007C3E12 /* SPZDates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA9CEFC1B14D93E007C3E12 /* SPZDates.swift */; };
+		7DA9CEFF1B14F444007C3E12 /* Trim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA9CEFE1B14F444007C3E12 /* Trim.swift */; };
+		7DA9CF011B14F5C0007C3E12 /* Conversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA9CF001B14F5C0007C3E12 /* Conversion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,8 @@
 		7DA9CEC51B14CC83007C3E12 /* Threads.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Threads.swift; sourceTree = "<group>"; };
 		7DA9CEF91B14D745007C3E12 /* URLEncode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLEncode.swift; sourceTree = "<group>"; };
 		7DA9CEFC1B14D93E007C3E12 /* SPZDates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPZDates.swift; sourceTree = "<group>"; };
+		7DA9CEFE1B14F444007C3E12 /* Trim.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trim.swift; sourceTree = "<group>"; };
+		7DA9CF001B14F5C0007C3E12 /* Conversion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Conversion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +127,8 @@
 			isa = PBXGroup;
 			children = (
 				7DA9CEF91B14D745007C3E12 /* URLEncode.swift */,
+				7DA9CEFE1B14F444007C3E12 /* Trim.swift */,
+				7DA9CF001B14F5C0007C3E12 /* Conversion.swift */,
 			);
 			name = Strings;
 			sourceTree = "<group>";
@@ -243,6 +249,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DA9CEC61B14CC83007C3E12 /* Threads.swift in Sources */,
+				7DA9CF011B14F5C0007C3E12 /* Conversion.swift in Sources */,
+				7DA9CEFF1B14F444007C3E12 /* Trim.swift in Sources */,
 				7DA9CEFD1B14D93E007C3E12 /* SPZDates.swift in Sources */,
 				7DA9CEFA1B14D745007C3E12 /* URLEncode.swift in Sources */,
 			);
