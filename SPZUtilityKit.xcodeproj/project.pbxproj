@@ -11,6 +11,7 @@
 		7DA9CEB41B14CBCA007C3E12 /* SPZUtilityKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DA9CEA81B14CBCA007C3E12 /* SPZUtilityKit.framework */; };
 		7DA9CEBB1B14CBCA007C3E12 /* SPZUtilityKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA9CEBA1B14CBCA007C3E12 /* SPZUtilityKitTests.swift */; };
 		7DA9CEC61B14CC83007C3E12 /* Threads.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA9CEC51B14CC83007C3E12 /* Threads.swift */; };
+		7DA9CEFA1B14D745007C3E12 /* URLEncode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA9CEF91B14D745007C3E12 /* URLEncode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,7 @@
 		7DA9CEB91B14CBCA007C3E12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7DA9CEBA1B14CBCA007C3E12 /* SPZUtilityKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPZUtilityKitTests.swift; sourceTree = "<group>"; };
 		7DA9CEC51B14CC83007C3E12 /* Threads.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Threads.swift; sourceTree = "<group>"; };
+		7DA9CEF91B14D745007C3E12 /* URLEncode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLEncode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 		7DA9CEAA1B14CBCA007C3E12 /* SPZUtilityKit */ = {
 			isa = PBXGroup;
 			children = (
+				7DA9CEF81B14D71B007C3E12 /* Strings */,
 				7DA9CEC41B14CC67007C3E12 /* Threads */,
 				7DA9CEAD1B14CBCA007C3E12 /* SPZUtilityKit.h */,
 				7DA9CEAB1B14CBCA007C3E12 /* Supporting Files */,
@@ -111,6 +114,14 @@
 				7DA9CEC51B14CC83007C3E12 /* Threads.swift */,
 			);
 			name = Threads;
+			sourceTree = "<group>";
+		};
+		7DA9CEF81B14D71B007C3E12 /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				7DA9CEF91B14D745007C3E12 /* URLEncode.swift */,
+			);
+			name = Strings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DA9CEC61B14CC83007C3E12 /* Threads.swift in Sources */,
+				7DA9CEFA1B14D745007C3E12 /* URLEncode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +426,7 @@
 				7DA9CEC01B14CBCA007C3E12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7DA9CEC11B14CBCA007C3E12 /* Build configuration list for PBXNativeTarget "SPZUtilityKitTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +435,7 @@
 				7DA9CEC31B14CBCA007C3E12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
