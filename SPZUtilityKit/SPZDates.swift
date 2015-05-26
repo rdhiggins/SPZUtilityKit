@@ -8,7 +8,7 @@
 
 import Foundation
 
-public func createLocalDateFormatter() -> NSDateFormatter {
+public func SPZLocalDateFormatter() -> NSDateFormatter {
     var df = NSDateFormatter()
 
     df.dateFormat = "HH:mm:ss zzzZZZ"
@@ -16,7 +16,7 @@ public func createLocalDateFormatter() -> NSDateFormatter {
     return df
 }
 
-public func createGMTDateFormatter() -> NSDateFormatter {
+public func SPZGMTDateFormatter() -> NSDateFormatter {
     var df = NSDateFormatter()
 
     df.dateFormat = "HH:mm:ss zzzZZZ"
@@ -25,7 +25,7 @@ public func createGMTDateFormatter() -> NSDateFormatter {
     return df
 }
 
-public func createUTCDateFormatter() -> NSDateFormatter {
+public func SPZUTCDateFormatter() -> NSDateFormatter {
     var df = NSDateFormatter()
 
     df.dateFormat = "HH:mm:ss zzzZZZ"
@@ -34,7 +34,7 @@ public func createUTCDateFormatter() -> NSDateFormatter {
     return df
 }
 
-public func createISODateFormatter() -> NSDateFormatter {
+public func SPZISODateFormatter() -> NSDateFormatter {
     var df = NSDateFormatter()
 
     df.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZZZZZ"

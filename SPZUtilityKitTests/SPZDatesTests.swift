@@ -20,26 +20,26 @@ class SPZDateTests: XCTestCase {
     }
 
     func testLocalDateFormatter() {
-        var local = createLocalDateFormatter()
+        var local = SPZLocalDateFormatter()
         XCTAssertEqual("HH:mm:ss zzzZZZ", local.dateFormat, ".dateFormat should be set to \"HH:mm:ss zzzZZZ\"")
     }
 
     func testGMTDateFormatter() {
-        var gmt = createGMTDateFormatter()
+        var gmt = SPZGMTDateFormatter()
 
         XCTAssertEqual("HH:mm:ss zzzZZZ", gmt.dateFormat, ".dateFormat should be set to \"HH:mm:ss zzzZZZ\"")
         XCTAssertEqual(NSTimeZone(abbreviation: "GMT")!, gmt.timeZone, ".timeZone should be set to \"GMT\"")
     }
 
     func testUTCDateFormatter() {
-        var utc = createUTCDateFormatter()
+        var utc = SPZUTCDateFormatter()
 
         XCTAssertEqual("HH:mm:ss zzzZZZ", utc.dateFormat, ".dateFormat should be set to \"HH:mm:ss zzzZZZ\"")
         XCTAssertEqual(NSTimeZone(abbreviation: "UTC")!, utc.timeZone, ".timeZone should be set to \"UTC\"")
     }
 
     func testISODateFormatter() {
-        var iso = createISODateFormatter()
+        var iso = SPZISODateFormatter()
         var locale = NSLocale(localeIdentifier: "en_US_POSIX")
 
         XCTAssertEqual("yyyy-MM-dd'T'HH:mm:ssZZZZZ", iso.dateFormat, ".dateFormat should be set to \"yyyy-MM-dd'T'HH:mm:ssZZZZZ\"")
