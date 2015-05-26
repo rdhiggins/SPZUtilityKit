@@ -8,74 +8,39 @@
 
 import Foundation
 
-public class SPZLocalDateFormatter: NSDateFormatter {
+public func createLocalDateFormatter() -> NSDateFormatter {
+    var df = NSDateFormatter()
 
-    public override init() {
-        super.init()
+    df.dateFormat = "HH:mm:ss zzzZZZ"
 
-        self.dateFormat = "HH:mm:ss zzzZZZ"
-    }
-
-    required public init(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-
-        self.dateFormat = "HH:mm:ss zzzZZZ"
-    }
+    return df
 }
 
-public class SPZGMTDateFormatter: NSDateFormatter {
+public func createGMTDateFormatter() -> NSDateFormatter {
+    var df = NSDateFormatter()
 
-    public override init() {
-        super.init()
+    df.dateFormat = "HH:mm:ss zzzZZZ"
+    df.timeZone = NSTimeZone(abbreviation: "GMT")
 
-        self.dateFormat = "HH:mm:ss zzzZZZ"
-        self.timeZone = NSTimeZone(abbreviation: "GMT")
-
-    }
-
-    required public init(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-
-        self.dateFormat = "HH:mm:ss zzzZZZ"
-        self.timeZone = NSTimeZone(abbreviation: "GMT")
-    }
+    return df
 }
 
-public class SPZUTCDateFormatter: NSDateFormatter {
+public func createUTCDateFormatter() -> NSDateFormatter {
+    var df = NSDateFormatter()
 
-    public override init() {
-        super.init()
+    df.dateFormat = "HH:mm:ss zzzZZZ"
+    df.timeZone = NSTimeZone(abbreviation: "UTC")
 
-        self.dateFormat = "HH:mm:ss zzzZZZ"
-        self.timeZone = NSTimeZone(name: "UTC")
-
-    }
-
-    required public init(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-
-        self.dateFormat = "HH:mm:ss zzzZZZ"
-        self.timeZone = NSTimeZone(name: "UTC")
-    }
+    return df
 }
 
-public class SPZISODateFormatter: NSDateFormatter {
+public func createISODateFormatter() -> NSDateFormatter {
+    var df = NSDateFormatter()
 
-    public override init() {
-        super.init()
+    df.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZZZZZ"
+    var locale = NSLocale(localeIdentifier: "en_US_POSIX")
+    df.timeZone = NSTimeZone(name: "UTC")
+    df.locale = locale
 
-        self.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZZZZZ"
-        var locale = NSLocale(localeIdentifier: "en_US_POSIX")
-        self.timeZone = NSTimeZone(name: "UTC")
-        self.locale = locale
-    }
-
-    required public init(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-
-        self.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZZZZZ"
-        var locale = NSLocale(localeIdentifier: "en_US_POSIX")
-        self.timeZone = NSTimeZone(name: "UTC")
-        self.locale = locale
-    }
+    return df
 }
