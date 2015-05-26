@@ -12,6 +12,7 @@
 		7DA9CEBB1B14CBCA007C3E12 /* SPZUtilityKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA9CEBA1B14CBCA007C3E12 /* SPZUtilityKitTests.swift */; };
 		7DA9CEC61B14CC83007C3E12 /* Threads.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA9CEC51B14CC83007C3E12 /* Threads.swift */; };
 		7DA9CEFA1B14D745007C3E12 /* URLEncode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA9CEF91B14D745007C3E12 /* URLEncode.swift */; };
+		7DA9CEFD1B14D93E007C3E12 /* SPZDates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA9CEFC1B14D93E007C3E12 /* SPZDates.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +34,7 @@
 		7DA9CEBA1B14CBCA007C3E12 /* SPZUtilityKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPZUtilityKitTests.swift; sourceTree = "<group>"; };
 		7DA9CEC51B14CC83007C3E12 /* Threads.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Threads.swift; sourceTree = "<group>"; };
 		7DA9CEF91B14D745007C3E12 /* URLEncode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLEncode.swift; sourceTree = "<group>"; };
+		7DA9CEFC1B14D93E007C3E12 /* SPZDates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPZDates.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 		7DA9CEAA1B14CBCA007C3E12 /* SPZUtilityKit */ = {
 			isa = PBXGroup;
 			children = (
+				7DA9CEFB1B14D92D007C3E12 /* Dates */,
 				7DA9CEF81B14D71B007C3E12 /* Strings */,
 				7DA9CEC41B14CC67007C3E12 /* Threads */,
 				7DA9CEAD1B14CBCA007C3E12 /* SPZUtilityKit.h */,
@@ -122,6 +125,14 @@
 				7DA9CEF91B14D745007C3E12 /* URLEncode.swift */,
 			);
 			name = Strings;
+			sourceTree = "<group>";
+		};
+		7DA9CEFB1B14D92D007C3E12 /* Dates */ = {
+			isa = PBXGroup;
+			children = (
+				7DA9CEFC1B14D93E007C3E12 /* SPZDates.swift */,
+			);
+			name = Dates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DA9CEC61B14CC83007C3E12 /* Threads.swift in Sources */,
+				7DA9CEFD1B14D93E007C3E12 /* SPZDates.swift in Sources */,
 				7DA9CEFA1B14D745007C3E12 /* URLEncode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
