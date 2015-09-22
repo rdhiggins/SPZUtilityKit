@@ -209,6 +209,8 @@
 		7DA9CE9F1B14CBCA007C3E12 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Spazstik Software";
 				TargetAttributes = {

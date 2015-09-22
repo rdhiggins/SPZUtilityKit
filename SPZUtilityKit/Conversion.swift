@@ -50,7 +50,7 @@ public extension String {
     }
 
     public func toUInt() -> UInt? {
-        if let val = self.trim().toInt() {
+        if let val = Int(self.trim()) {
             if val >= 0 {
                 return UInt(val)
             }

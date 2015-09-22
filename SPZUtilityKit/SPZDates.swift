@@ -26,7 +26,7 @@
 import Foundation
 
 public func SPZLocalDateFormatter() -> NSDateFormatter {
-    var df = NSDateFormatter()
+    let df = NSDateFormatter()
 
     df.dateFormat = "HH:mm:ss zzzZZZ"
 
@@ -34,7 +34,7 @@ public func SPZLocalDateFormatter() -> NSDateFormatter {
 }
 
 public func SPZGMTDateFormatter() -> NSDateFormatter {
-    var df = NSDateFormatter()
+    let df = NSDateFormatter()
 
     df.dateFormat = "HH:mm:ss zzzZZZ"
     df.timeZone = NSTimeZone(abbreviation: "GMT")
@@ -43,7 +43,7 @@ public func SPZGMTDateFormatter() -> NSDateFormatter {
 }
 
 public func SPZUTCDateFormatter() -> NSDateFormatter {
-    var df = NSDateFormatter()
+    let df = NSDateFormatter()
 
     df.dateFormat = "HH:mm:ss zzzZZZ"
     df.timeZone = NSTimeZone(abbreviation: "UTC")
@@ -52,10 +52,10 @@ public func SPZUTCDateFormatter() -> NSDateFormatter {
 }
 
 public func SPZISODateFormatter() -> NSDateFormatter {
-    var df = NSDateFormatter()
+    let df = NSDateFormatter()
 
     df.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZZZZZ"
-    var locale = NSLocale(localeIdentifier: "en_US_POSIX")
+    let locale = NSLocale(localeIdentifier: "en_US_POSIX")
     df.timeZone = NSTimeZone(name: "UTC")
     df.locale = locale
 

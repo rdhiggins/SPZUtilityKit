@@ -37,27 +37,27 @@ class SPZDateTests: XCTestCase {
     }
 
     func testLocalDateFormatter() {
-        var local = SPZLocalDateFormatter()
+        let local = SPZLocalDateFormatter()
         XCTAssertEqual("HH:mm:ss zzzZZZ", local.dateFormat, ".dateFormat should be set to \"HH:mm:ss zzzZZZ\"")
     }
 
     func testGMTDateFormatter() {
-        var gmt = SPZGMTDateFormatter()
+        let gmt = SPZGMTDateFormatter()
 
         XCTAssertEqual("HH:mm:ss zzzZZZ", gmt.dateFormat, ".dateFormat should be set to \"HH:mm:ss zzzZZZ\"")
         XCTAssertEqual(NSTimeZone(abbreviation: "GMT")!, gmt.timeZone, ".timeZone should be set to \"GMT\"")
     }
 
     func testUTCDateFormatter() {
-        var utc = SPZUTCDateFormatter()
+        let utc = SPZUTCDateFormatter()
 
         XCTAssertEqual("HH:mm:ss zzzZZZ", utc.dateFormat, ".dateFormat should be set to \"HH:mm:ss zzzZZZ\"")
         XCTAssertEqual(NSTimeZone(abbreviation: "UTC")!, utc.timeZone, ".timeZone should be set to \"UTC\"")
     }
 
     func testISODateFormatter() {
-        var iso = SPZISODateFormatter()
-        var locale = NSLocale(localeIdentifier: "en_US_POSIX")
+        let iso = SPZISODateFormatter()
+        let locale = NSLocale(localeIdentifier: "en_US_POSIX")
 
         XCTAssertEqual("yyyy-MM-dd'T'HH:mm:ssZZZZZ", iso.dateFormat, ".dateFormat should be set to \"yyyy-MM-dd'T'HH:mm:ssZZZZZ\"")
         XCTAssertEqual(NSTimeZone(abbreviation: "UTC")!, iso.timeZone, ".timeZone should be set to \"UTC\"")
